@@ -5,10 +5,21 @@ public class Task1 {
     Написать функцию, которая вычисляет минимум из трёх чисел.
     */
     public static void main(String[] args) {
-        //System.out.println(min(5,2,3));
+        int a = 10;
+        int b = 14;
+        int c = 17;
+        int m;
+
+        if (a > b){
+            m = b;
+        } else {
+            m = a;
+        }
+        if (m > c){
+            m = c;
+        }
+        System.out.print("Minimal number is: ");
+        System.out.println(m);
     }
 
-    public static int min(int a, int b, int c) {
-        return 0;
-    }
 }
