@@ -6,10 +6,13 @@ package lesson1;
  */
 public class Task5 {
     public static void main(String[] args) {
-        //System.out.println(reverse("Hello world!!!"));
-    }
 
-    public static String reverse(String str) {
-        return "";
+        String str = "Hello world!!!";
+        char[] chr = str.toCharArray();
+
+        for (int i = chr.length - 1; i >= 0; i--) {
+            System.out.print(chr[i]);
+        }
     }
 }
+
