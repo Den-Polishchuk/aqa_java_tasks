@@ -26,16 +26,5 @@ public class Task2 {
             System.out.println();
         }
 
-//        String s = "*";
-//        int i = 0;
-//        while (i <10) {
-//            int j = 0;
-//            while (j <= i) {
-//                System.out.print(s);
-//                j++;
-//            }
-//            System.out.println();
-//            i++;
-//        }
     }
 }
