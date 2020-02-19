@@ -21,4 +21,59 @@ package lesson2;
 
 public class Task1 {
 
+    public Task1(){
+        System.out.println("Person information:");
+    }
+
+    private int age;
+    public void setAge(int age) {
+        if(age < 0 || age > 100){
+            System.out.println("Age Error");
+        }else {
+            this.age = age;
+        }
+
+        if (age < 15){
+            this.ageGroup = "Child";
+        } else if(age > 15 && age <= 25){
+            this.ageGroup = "Student";
+        } else if(age > 26 && age <= 65){
+            this.ageGroup = "Worker";
+        } else if(age > 65 && age <= 100) {
+            this.ageGroup = "Pensioner";
+        }
+
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+
+    private String name;
+    public void setName(String name) {
+        int len = name.trim().length();
+        if(len < 3 || len > 50 || len == 0){
+            System.out.println("Name Error");
+            this.name = "fail";
+        }else {
+            this.name = name;
+        }
+    }
+
+    public String getName() {
+        String name2 = name.substring(0, 1).toUpperCase() + name.substring(1);
+        return name2;
+    }
+
+
+    String ageGroup;
+
+    private void setAgeGroup(String ageGroup) {
+        this.ageGroup = ageGroup;
+    }
+
+    public String getAgeGroup() {
+        return this.ageGroup;
+    }
 }
