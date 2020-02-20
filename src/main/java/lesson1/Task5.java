@@ -5,16 +5,14 @@ package main.java.lesson1;
  * например "Hello world!!!" -> "!!!dlrow olleH"
  */
 public class Task5 {
-    public static void main(String[] args) {
-            char charArr;
-
-            String str = "Hello world!!!";
-            char[] chr = str.toCharArray();
-
-            for (int i = chr.length - 1; i >= 0; i--) {
-                System.out.print(chr[i]);
-            }
+    public String revertString(String st) {
+        String result = "";
+        char symbols[] = st.toCharArray();
+        for (int i=symbols.length-1; i>=0; i--) {
+            result += symbols[i];
         }
+        return result;
     }
+}
 
 
