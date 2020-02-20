@@ -1,0 +1,14 @@
+<!--<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >-->
+<!--<suite name="First suite">-->
+<!--        <parameter name="login" value="Denys">-->
+<!--            <test name="First test">-->
+<!--                <classes>-->
+<!--                    <class name="test.java.homeTaskTests">-->
+<!--                        <methods>-->
+<!--                            <exclude name="minNumCheck1"/>-->
+<!--                        </methods>-->
+<!--                    </class>-->
+<!--                </classes>-->
+<!--            </test>-->
+<!--        </parameter>-->
+<!--</suite>-->
